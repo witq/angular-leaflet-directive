@@ -2377,6 +2377,9 @@
       };
       return {
         deleteMarker: _deleteMarker,
+        resetCurrentGroups: function () {
+          groups = {};
+        },
         createMarker: function (markerData) {
           if (!isDefined(markerData)) {
             $log.error('[AngularJS - Leaflet] The marker definition is not valid.');
